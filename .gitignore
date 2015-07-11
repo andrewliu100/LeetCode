@@ -1,3 +1,20 @@
+##################
+## Common
+##################
 /bin
 /test-output
-/¡£git
+/.git
+/target
+
+##################
+## Eclipse
+##################
+/.settings
+/.classpath
+/.project
+
+##################
+## IntelliJ IDEA
+##################
+/.idea
+/LeetCode.iml
