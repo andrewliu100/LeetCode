@@ -8,6 +8,7 @@
  */
 package com.leetcode;
 
+import com.leetcode.model.BinaryTree;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -51,7 +52,7 @@ public class InvertBinaryTreeTest {
 
     @Test(dataProvider = "testData")
     public void testInvertBinaryTree(Integer[] tree, Integer[] inverted) {
-        InvertBinaryTree.TreeNode root = invertBinaryTree.createBinaryTree(tree);
+        BinaryTree.TreeNode root = BinaryTree.createBinaryTree(tree);
         invertBinaryTree.invertTree(root);
         Assert.assertEquals(invertBinaryTree.toPreOrderArray(root), inverted);
     }
