@@ -10,3 +10,5 @@ Solutions to the algorithm problems on LeetCode.
 225 Implement Stack using Queues
 
 222 Count Complete Tree Nodes
+
+38 Count and Say
