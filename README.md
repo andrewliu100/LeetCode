@@ -37,6 +37,8 @@ Solutions to the algorithm problems on LeetCode.
 
 50 Pow(x, n)    
 
+54 Spiral Matrix
+
 228 Summary Ranges
 
 227 Basic Calculator II
