@@ -41,6 +41,8 @@ Solutions to the algorithm problems on LeetCode.
 
 55 Jump Game ! (backtracking -> DP -> greedy)
 
+62 Unique Paths
+
 228 Summary Ranges
 
 227 Basic Calculator II
