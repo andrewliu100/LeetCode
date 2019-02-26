@@ -23,15 +23,25 @@ public class JumpGame {
 
     /**
      * Backtracking.
-     * O(2^n). n is the number of integers in the array.
+     * Time Complexity: O(2^n). n is the number of integers in the array.
      *
      * The time complexity if the total number of possible ways jump from 0 to n - 1, because
      * we potentially try all the ways until we reach n - 1.
      *
-     * Let T(x) be the number of ways jump from x to n - 1. T(x) = T(x+1) + T(x+2) + ... + T(n - 1).
-     * Because from x, we can jump to x + 1, x + 2, ..., n - 2, n - 1. first, then we jump from
-     * there to n - 1. T(x) = 2 ^ (n-x) => T(n) = 2 ^ n.
+     * Let T(x) be the number of ways jump from x to n - 1.
+     * Because from x, we can jump to x + 1, x + 2, ..., n - 2, n - 1 first, then we jump from
+     * there to n - 1.
      *
+     * T(x) = T(x+1) + T(x+2) + ... + T(n-1)
+     * T(x+1) = T(x+2) + T(x+3) + ... + T(n-1)
+     * => T(x) = T(x+1) + T(x+1) = 2*T(x+1)
+     * => T(x) = 2*2*T(x+2) = 2^2*T(x+2)
+     * => T(x) = 2^n*T(x+n)
+     * => T(x) = 2 ^ (n-x)T(n)
+     *    T(n) = 1, jumping from n to n has only 1 way
+     * => T(x) = 2 ^ (n-x).
+     *
+     * Space Complexity: O(n). Recursion call stack.
      */
     public boolean canJump1(int[] nums) {
         return helper(0, nums);
@@ -53,7 +63,8 @@ public class JumpGame {
     /**
      * DP.
      *
-     * O(n^2)
+     * Time Complexity: O(n^2). n is the number of integers in the array.
+     * Space Complexity: O(n). n is the number of integers in the array.
      */
     public boolean canJump2(int[] nums) {
         boolean[] memo = new boolean[nums.length];
