@@ -40,7 +40,12 @@ public class UniquePaths {
     private int endX;
     private int endY;
 
-    // Backtracking. O(?)
+    /**
+     * Backtracking.
+     *
+     * Time complexity: O(?)
+     * Space complexity: O(m * n). Recursion call stack
+     */
     public int uniquePaths1(int m, int n) {
         endX = m - 1;
         endY = n - 1;
@@ -63,7 +68,9 @@ public class UniquePaths {
     }
 
     /**
-     * DP. O(m * n)
+     * DP.
+     * Time complexity: O(m * n)
+     * Space complexity: O(m * n)
      */
     public BigInteger uniquePaths2(int m, int n) {
         BigInteger[][] memo = new BigInteger[m][n];
