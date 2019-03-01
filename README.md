@@ -47,6 +47,10 @@ Solutions to the algorithm problems on LeetCode.
 
 63 Unique Paths II
 
+64 Minimum Path Sum
+
+69 Sqrt(x)
+
 228 Summary Ranges
 
 227 Basic Calculator II
