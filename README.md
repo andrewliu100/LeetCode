@@ -49,7 +49,9 @@ Solutions to the algorithm problems on LeetCode.
 
 64 Minimum Path Sum
 
-69 Sqrt(x)
+69 Sqrt(x) - Trick
+
+71 Simplify Path - Data structure
 
 228 Summary Ranges
 
