@@ -53,6 +53,8 @@ Solutions to the algorithm problems on LeetCode.
 
 71 Simplify Path - Data structure
 
+73 Set Matrix Zeros - Trick
+
 228 Summary Ranges
 
 227 Basic Calculator II

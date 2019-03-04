@@ -24,6 +24,8 @@ package com.leetcode;
 public class SqrtX {
 
     /**
+     * !Trick!
+     *
      * Let i be the square root of x.
      *
      * Important observations:
