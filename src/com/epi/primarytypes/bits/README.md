@@ -18,6 +18,7 @@ Note that the weight of the MSB is negative (the largest possible negative actua
 so when this bit is on, the whole number (the weighted sum) becomes negative.
 
 Let's simulate it with 4-bit numbers:
+
 | Binary |     Weighted sum       | Integer value |
 | ------ | ---------------------- | ------------- | 
 | 0000   | 0 + 0 + 0 + 0          |  0            |
@@ -46,14 +47,14 @@ Let's simulate it with 4-bit numbers:
 |long          |  64  | -2^63 ~ 2^63-1 |
 
 # Bitwise operations
-| Operator  | Description |    Example    | Explanation     | Note |
-| --------- | ----------- | ------------- | -----------     | ---- |
-|  \|       | bitwise OR  | 12 \| 25 = 29 |  00001100<br/>\| 00011001<br/>-----------<br/>00011101 = 29 |      |                                  
-|  &        | bitwise AND | 12 & 25 = 8   |  00001100<br/>& 00011001<br/> -----------<br/>00001000 = 8  |      |
-|  ^        | bitwise XOR | 12 ^ 25 = 21  |  00001100<br/>^ 00011001<br/> -----------<br/>00010101 = 21 |      |
-|  ~        | bitwise complement |  ~12    | ~00001100<br/> -----------<br/>11110011 = -13 |      |
-|  <<       | signed left shift | 12 << 2 = 48 | 00001100 << 2<br/> -----------<br/>00110000 = 48 | Equivalent to multiply by 2s.<br/>Shift left and fill 0s into rightmost positions. |
-|  \>>      | signed right shift | 12 >> 2 = 3 | 00001100 >> 2<br/> -----------<br/>00000011 = 3  | Equivalent to divide by 2s.<br/>Shift right and fill 0s into leftmost positions for positives. |                                                
-|           |                    | -12 >> 2 = -3 | 11110100 >> 2<br/> -----------<br/>11111101 = -3 | Shift right and fill 1s into leftmost positions for negatives.
-|  \>>>     | unsigned right shift |  12 >>> 2 = 3 | 00001100 >>> 2<br/> -----------<br/>00000011 = 3 | Equivalent to divide by 2s for positives.<br/>Shift right and fill 0s into leftmost positions. |                                                 
-|           |                      | -12 >>> 2 | 11110100 >>> 2<br/> -----------<br/>00..111101 = 1073741821 |       |  
+| Operator  |     Description      |      Example      | Explanation     | Note |
+| --------- | -------------------- | ----------------- | -----------     | ---- |
+|  \|       | bitwise OR           | 12 \| 25 = 29     |  00001100\|<br/>00011001<br/>-----------<br/>00011101 = 29 |      |                                  
+|  &        | bitwise AND          | 12 & 25 = 8       |  00001100&<br/>00011001<br/> -----------<br/>00001000 = 8  |      |
+|  ^        | bitwise XOR          | 12 ^ 25 = 21      |  00001100^<br/>00011001<br/> -----------<br/>00010101 = 21 |      |
+|  ~        | bitwise complement   |  ~12              | ~00001100<br/> -----------<br/>11110011 = -13 |      |
+|  <<       | signed left shift    | 12 << 2 = 48      | 00001100 << 2<br/> -----------<br/>00110000 = 48 | Equivalent to multiply by 2s.<br/>Shift left and fill 0s into rightmost positions. |
+|  \>>      | signed right shift   | 12 >> 2 = 3       | 00001100 >> 2<br/> -----------<br/>00000011 = 3  | Equivalent to divide by 2s.<br/>Shift right and fill 0s into leftmost positions for positives. |                                                
+|           |                      | -12 >> 2 = -3     | 11110100 >> 2<br/> -----------<br/>11111101 = -3 | Shift right and fill 1s into leftmost positions for negatives.
+|  \>>>     | unsigned right shift |  12 >>> 2 = 3     | 00001100 >>> 2<br/> -----------<br/>00000011 = 3 | Equivalent to divide by 2s for positives.<br/>Shift right and fill 0s into leftmost positions. |                                                 
+|           |                      | -12 >>> 2         | 11110100 >>> 2<br/> -----------<br/>00..111101 = 1073741821 |       |  
