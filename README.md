@@ -55,6 +55,8 @@ Solutions to the algorithm problems on LeetCode.
 
 73 Set Matrix Zeros - Trick
 
+74 Search a 2D Matrix - binary search
+
 228 Summary Ranges
 
 227 Basic Calculator II
