@@ -57,6 +57,8 @@ Solutions to the algorithm problems on LeetCode.
 
 74 Search a 2D Matrix - binary search
 
+75 Sort Colors - three pointers
+
 228 Summary Ranges
 
 227 Basic Calculator II
