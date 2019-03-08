@@ -43,7 +43,7 @@ public class FindRangeOfElementInSortedArray {
         int hi = nums.length;
 
         while (lo < hi) {
-            int mid = (lo + hi) / 2;
+            int mid = lo + (hi - lo) / 2;
             // Normal binary search when target != nums[mid]
             if (target < nums[mid]) {
                 // Not using "mid - 1" due to we return lo - 1 when search right bound.

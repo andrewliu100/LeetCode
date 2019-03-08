@@ -19,7 +19,7 @@ Solutions to the algorithm problems on LeetCode.
 
 29 Divide Two Integers
 
-33 Search in Rotated Sorted Array
+33 Search in Rotated Sorted Array - binary search - trick
 
 34 Find First and Last Position of Element in Sorted Array
 

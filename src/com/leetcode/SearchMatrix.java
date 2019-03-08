@@ -47,7 +47,7 @@ public class SearchMatrix {
         int lo = 0;
         int hi = m * n - 1;
         while (lo <= hi) {
-            int mid = (lo + hi)/2;
+            int mid = lo + (hi - lo)/2;
             int midr = mid / n;
             int midc = mid % n;
             if (matrix[midr][midc] == target) {

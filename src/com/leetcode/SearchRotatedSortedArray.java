@@ -22,12 +22,13 @@ public class SearchRotatedSortedArray {
         int lo = 0;
         int hi = nums.length - 1;
         while (lo <= hi) {
-            int mid = (lo + hi) / 2;
+            int mid = lo + (hi - lo) / 2;
             if (target == nums[mid]) {
                 return mid;
             }
             // There must be a half is sorted in rotated sorted array.
             // Find the sorted half first
+            // use <= instead of < for [3,1] target = 1
             if (nums[lo] <= nums[mid]) {
                 // left half is sorted
                 // [4,5,6,7,8,1,2,3] nums[mid] = 7
