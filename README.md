@@ -59,9 +59,11 @@ Solutions to the algorithm problems on LeetCode.
 
 75 Sort Colors - three pointers
 
-77 Combinations - back tracking
+77 Combinations - Backtracking
 
-78 Subsets - back tracking
+78 Subsets - Backtracking
+
+79 Word Search - DFS + Backtracking
 
 228 Summary Ranges
 
