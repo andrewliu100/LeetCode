@@ -92,6 +92,19 @@ public class RemoveDuplicatesFromSortedArrayII {
         int cnt = 1;
         int len = 1;
 
-
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] != nums[i - 1]) {
+                nums[len] = nums[i];
+                cnt = 1;
+                len++;
+            } else {
+                if (cnt < k) {
+                    nums[len] = nums[i];
+                    cnt++;
+                    len++;
+                }
+            }
+        }
+        return len;
     }
 }

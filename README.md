@@ -67,7 +67,7 @@ Solutions to the algorithm problems on LeetCode.
 
 80 Remove Duplicates from Sorted Array II - Two pointers
 
-81. Search in Rotated Sorted Array II - Binary search + Trick
+81 Search in Rotated Sorted Array II - Binary search + Trick
 
 228 Summary Ranges
 
