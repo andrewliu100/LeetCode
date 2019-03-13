@@ -14,7 +14,11 @@ package com.leetcode;
 public class SearchRotatedSortedArray {
 
     /**
-     * O(logn)
+     * Binary search.
+     *
+     * Time complexity: O(logn)
+     * Space complexity: O(1)
+     *
      */
     public int search(int[] nums, int target) {
         if (nums.length == 0)
