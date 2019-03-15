@@ -69,6 +69,10 @@ Solutions to the algorithm problems on LeetCode.
 
 81 Search in Rotated Sorted Array II - Binary search + Trick
 
+82 Remove Duplicates from Sorted List II - dummy, pre, cur
+
+83 Remove Duplicates from Sorted List - dummy, pre, cur
+
 228 Summary Ranges
 
 227 Basic Calculator II
