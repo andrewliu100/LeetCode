@@ -71,7 +71,9 @@ Solutions to the algorithm problems on LeetCode.
 
 82 Remove Duplicates from Sorted List II - dummy, pre, cur
 
-83 Remove Duplicates from Sorted List - dummy, pre, cur
+83 Remove Duplicates from Sorted List - dummy node, pre, cur
+
+86 Partition List - dummy node, 3 pointers
 
 228 Summary Ranges
 
