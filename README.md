@@ -75,6 +75,10 @@ Solutions to the algorithm problems on LeetCode.
 
 86 Partition List - dummy node, 3 pointers
 
+89 Gray Code - Bit operation + Trick
+
+90 Subsets II - Backtracking (combination)
+
 228 Summary Ranges
 
 227 Basic Calculator II
