@@ -25,7 +25,7 @@ public class JumpGame {
      * Backtracking.
      * Time Complexity: O(2^n). n is the number of integers in the array.
      *
-     * The time complexity if the total number of possible ways jump from 0 to n - 1, because
+     * The time complexity is the total number of possible ways jump from 0 to n - 1, because
      * we potentially try all the ways until we reach n - 1.
      *
      * Let T(x) be the number of ways jump from x to n - 1.

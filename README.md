@@ -39,7 +39,7 @@ Solutions to the algorithm problems on LeetCode.
 
 54 Spiral Matrix
 
-55 Jump Game ! (backtracking -> DP -> greedy)
+55 Jump Game ! - backtracking -> DP -> greedy
 
 61 Rotate List
 
@@ -78,6 +78,8 @@ Solutions to the algorithm problems on LeetCode.
 89 Gray Code - Bit operation + Trick
 
 90 Subsets II - Backtracking (combination)
+
+91 Decode Ways ! - Backtracking -> DP
 
 228 Summary Ranges
 
