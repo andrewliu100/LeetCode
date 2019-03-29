@@ -81,6 +81,8 @@ Solutions to the algorithm problems on LeetCode.
 
 91 Decode Ways ! - Backtracking -> DP
 
+92 Reverse Linked List II - Dummy node, 3 pointers
+
 228 Summary Ranges
 
 227 Basic Calculator II
