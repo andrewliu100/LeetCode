@@ -29,8 +29,9 @@ public class Pow {
         if (n == 0) {
             return 1.0;
         } else if (n < 0) {
-            // -n will be overflow when n = -2^31, so we do -(n + 1)
-            return 1/x * myPow(x, -(n + 1));
+            // Will be stack overflow when n = -2^31 because -n doesn't become positive,
+            // so we do -(n + 1)
+            return 1/x * 1.0/myPow(x, -(n + 1));
         } else {
             // n > 0
             double res = x;
@@ -44,5 +45,24 @@ public class Pow {
             }
             return res * oddMultiply;
         }
+    }
+
+    /**
+     * O(logn). Using bit operation (From EPI)
+     */
+    public double power(double x, int n) {
+        double result = 1.0;
+        if (n < 0) {
+            x = 1/x;
+            n = -n; // No need to worry about stack overflow when n = -2^31
+        }
+        while (n != 0) {
+            if ((n & 1) != 0) {
+                result *= x;
+            }
+            x *= x;
+            n >>>= 1;
+        }
+        return result;
     }
 }
